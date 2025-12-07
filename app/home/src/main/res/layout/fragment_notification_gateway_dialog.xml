@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Gateway Available"
+            android:textSize="@dimen/sp_24"
+            android:fontFamily="@font/baloo2_medium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/before_adding_the_device_configure_the_gateway"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:fontFamily="@font/baloo2_medium"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="18sp"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#E0E0E0" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvConfigure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/configure"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</layout>

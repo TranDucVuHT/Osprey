@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="device"
+            type="com.osprey.domain.home.model.local.Device_Profile" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDevice"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:scaleType="fitCenter"
+            android:src="@{device.image}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDeviceName"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:fontFamily="@font/baloo2_medium"
+            android:textColor="@color/black"
+            android:singleLine="false"
+            android:text="@{device.name}"
+            android:textSize="@dimen/sp_12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
